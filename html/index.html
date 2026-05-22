@@ -4,21 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/style.css">
-  <title>Essencial Fitness</title>
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <title>Essencial Fitness</title> 
 
 </head>
 <body>
 
   <!-- HEADER -->
   <header>
-    <div class="logo">Essencial Fitness</div>
+    <div class="logo">
+      <img src="../img/logo.png">
+    </div>
 
     <nav>
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Planos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="../html/index.html">Início</a></li>
+        <li><a href="../html/planos.html">Planos</a></li>
+        <li><a href="../html/produtos.html">Produtos</a></li>
+        <li><a href="../html/treinos.html">Treinos</a></li>
       </ul>
     </nav>
 
@@ -32,12 +35,11 @@
       <h1>Transforme seu <span>corpo</span> e sua mente</h1>
 
       <p>
-        Base inicial para o projeto Essencial Fitness.
-        Você pode substituir textos, imagens, cores e sessões
-        conforme a identidade do seu projeto.
+        Essencial Fitness não é apenas uma marca, mas uma experiência.
       </p>
-
-      <button class="btn">Explorar</button>
+      <a href="#sessoes">
+        <button class="btn">Explorar</button>
+      </a>
     </div>
 
     <div class="hero-image">
@@ -49,30 +51,71 @@
   </section>
 
   <!-- CARDS -->
-  <section>
+  <section class="sessoes" id="sessoes">
 
-    <h2 class="section-title">Sessões do Site</h2>
+    <h2 class="titulo-sessoes">
+        Sessões do Site
+    </h2>
 
-    <div class="cards">
+    <div class="cards-container">
 
-      <div class="card">
-        <h3>Treinos</h3>
-        <p>Área para listar treinos, planos e objetivos.</p>
-      </div>
+        <div class="card">
 
-      <div class="card">
-        <h3>Nutrição</h3>
-        <p>Espaço para dietas, dicas alimentares e acompanhamento.</p>
-      </div>
+            <div class="icon">
+                🏋️
+            </div>
+          <a href="../html/treinos.html">
+            <h3>Treinos</h3>
 
-      <div class="card">
-        <h3>Resultados</h3>
-        <p>Você pode mostrar evolução, depoimentos e estatísticas.</p>
-      </div>
+            <p>
+                Planos personalizados, metas e acompanhamento da sua evolução.
+            </p>
+          </a>
+            <button>
+                Explorar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">
+                🥗
+            </div>
+          <a href="../html/nutricao.html">
+            <h3>Nutrição</h3>
+
+            <p>
+                Dietas, dicas alimentares e acompanhamento nutricional.
+            </p>
+          </a>
+            <button>
+                Explorar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">
+                🛒
+            </div>
+          <a href="../html/produtos.html">
+            <h3>Produtos</h3>
+
+            <p>
+                Adquira suplementos e produtos oficiais da Essencial Fit.
+            </p>
+          </a>
+            <button>
+                Explorar
+            </button>
+
+        </div>
 
     </div>
 
-  </section>
+</section>
 
   <!-- FOOTER -->
   <footer>
